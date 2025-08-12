@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BoxingInfo - Home</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to bottom right, #0b0b0b, #1a1a1a);
+        color: white;
+        overflow-x: hidden;
+        cursor: url('https://i.imgur.com/qj0fQ1g.png'), auto; /* Boxing glove cursor */
+    }
+    header {
+        background: rgba(15, 15, 15, 0.95);
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 2px solid #ff3131;
+    }
+    header h1 {
+        font-size: 2em;
+        color: #ff3131;
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px #ff3131, 0 0 20px #ff3131;
+    }
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    nav a:hover {
+        color: #ff3131;
+        text-shadow: 0 0 10px #ff3131;
+    }
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+        background: url('https://images.unsplash.com/photo-1608127211199-3e59c3a3c642?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+        position: relative;
+    }
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.65);
+    }
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+    .hero h2 {
+        font-size: 3em;
+        color: #ff3131;
+        text-shadow: 0 0 20px #ff3131;
+    }
+    .hero p {
+        font-size: 1.2em;
+        max-width: 700px;
+        margin: 20px auto 0;
+    }
+    section {
+        padding: 60px 20px;
+        max-width: 1100px;
+        margin: auto;
+        text-align: center;
+    }
+    h3 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #ff3131;
+        text-shadow: 0 0 15px #ff3131;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+    .card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 20px #ff3131;
+    }
+    footer {
+        background: #0b0b0b;
+        text-align: center;
+        padding: 20px;
+        border-top: 2px solid #ff3131;
+        font-size: 0.9em;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>BoxingInfo</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">News</a>
+        <a href="#">Upcoming Fights</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Your #1 Source for Boxing Knowledge</h2>
+        <p>Stay ahead of the fight game with the latest news, match schedules, training guides, and more — all in one futuristic hub.</p>
+    </div>
+</section>
+
+<section>
+    <h3>What We Offer</h3>
+    <div class="cards">
+        <div class="card">
+            <h4>Latest Boxing News</h4>
+            <p>Breaking updates from the boxing world so you never miss a knockout moment.</p>
+        </div>
+        <div class="card">
+            <h4>Fight Schedules</h4>
+            <p>Complete calendars for all major events, from title bouts to up-and-coming prospects.</p>
+        </div>
+        <div class="card">
+            <h4>Training Tips</h4>
+            <p>Expert guidance on techniques, fitness, and strategies to help you sharpen your skills.</p>
+        </div>
+        <div class="card">
+            <h4>Community Forums</h4>
+            <p>Connect with boxing fans, share opinions, and debate the greatest fighters of all time.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 BoxingInfo. All rights reserved.
+</footer>
+
+</body>
+</html>
